@@ -103,7 +103,7 @@ To carry out all the objectives for this repository, the following necessary dep
 ## Usage 
 The Anime Recommender System uses a combination of collaborative and content-based filtering to provide personalized anime recommendations. Here’s a step-by-step guide to using the app:
 
-1. **Access the App**: Open the Anime Recommender System app using the following link: https://justin9503-anime-recommender-system-base-app-bc2a21.streamlit.app/
+1. **Access the App**: Open the Anime Recommender System app using the following link: https://justin9503-anime-recommendation-system-base-app-vf8xbz.streamlit.app/ 
 2. (****)
 3. (****)
 4. (****)
@@ -120,7 +120,3 @@ The Anime Recommender System uses a combination of collaborative and content-bas
 | [Mbalenhle Lenepa](https://github.com/Mbali0901)                                            | lenepembali@gmail.com            |
 | [Lungile Faith Baloyi](https://github.com/LFBaloyi19)                                       | lfbaloyi@gmail.com               |
 
-
-
-
-https://justin9503-anime-recommendation-system-base-app-vf8xbz.streamlit.app/
