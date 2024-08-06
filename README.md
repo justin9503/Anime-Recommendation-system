@@ -38,7 +38,27 @@ The Anime Recommender System is designed to assist users in discovering new anim
 
 Overall, the Anime Recommender System not only helps users find new and exciting anime but also provides valuable insights into the mechanics of recommendation algorithms and their application in real-world scenarios.
 ### Key Features
-(*** need to be added)
+
+- **Model Selection**: Users can choose between three recommendation models:
+  - **NMF Model**: Utilizes Non-negative Matrix Factorization to generate predictions based on historical user preferences.
+  - **Content-Based Model**: Recommends anime by analyzing the content and attributes of the input titles.
+  - **Hybrid Model**: Combines the strengths of both the NMF and content-based models to offer more accurate and personalized recommendations.
+
+- **Interactive User Interface**: The app features a user-friendly interface built with Streamlit, making it easy for users to input their favorite anime and receive recommendations.
+
+- **Personalized Recommendations**: Provides tailored suggestions based on the user’s input, enhancing the discovery of new anime that matches individual tastes.
+
+- **Exploratory Data Analysis (EDA)**: Includes visualizations and insights on anime distribution, genres, and ratings, allowing users to explore data trends and patterns.
+
+- **Dynamic Background and Imagery**: Utilizes a visually appealing background and logo to create an engaging and immersive experience for users.
+
+- **Real-Time Feedback**: The app generates recommendations in real-time, ensuring that users receive immediate and relevant suggestions based on their preferences.
+
+- **Continuous Improvement**: The recommendation algorithms are refined using MLflow for hyperparameter tuning and performance tracked through Kaggle submissions to ensure high-quality suggestions.
+
+- **Comprehensive Information**: The "About" page provides detailed information on how the recommendation system works and the models used, giving users insights into the underlying mechanics.
+
+These features combine to create a robust and user-centric anime recommendation system that caters to both casual viewers and anime enthusiasts alike.
 
 ### How It Works
 The Anime Recommender System uses a complex approach by integrating both collaborative and content-based recommendation methods to provide highly accurate and personalized suggestions.
@@ -100,15 +120,25 @@ To carry out all the objectives for this repository, the following necessary dep
 - Scikit-learn
 - Streamlit
   
-## Usage 
+## Usage
+
 The Anime Recommender System uses a combination of collaborative and content-based filtering to provide personalized anime recommendations. Here’s a step-by-step guide to using the app:
 
-1. **Access the App**: Open the Anime Recommender System app using the following link: https://justin9503-anime-recommendation-system-base-app-vf8xbz.streamlit.app/ 
-2. (****)
-3. (****)
-4. (****)
-5. (****)
-6. (****)
+1. **Access the App**: Open the Anime Recommender System app using the following link: [Anime Recommender System App](https://justin9503-anime-recommender-system-base-app-bc2a21.streamlit.app/)
+
+2. **Select the Model**: In the sidebar, choose the recommendation model you want to use:
+   - **NMF Model**: This model uses Non-negative Matrix Factorization to predict ratings.
+   - **Content-Based Model**: This model suggests anime based on content similarity to the input titles.
+   - **Hybrid Model**: This model combines both NMF and content-based approaches for enhanced recommendations.
+
+3. **Enter Favorite Anime**: Input the names of three anime titles you enjoy in the provided text fields. These titles will be used as a reference to generate recommendations.
+
+4. **Get Recommendations**: Click the “Get Recommendations” button to receive personalized anime suggestions based on the selected model. The app will display a list of recommended anime with their ratings and types.
+
+5. **Explore Data**: Navigate to the "EDA" page to view various visualizations and insights about anime distribution, genres, ratings, and more.
+
+6. **Learn More**: Visit the "About" page to get information about how the app works and the models used for recommendations.
+
 
 ## Contributors
 
