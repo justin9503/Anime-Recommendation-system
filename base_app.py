@@ -4,10 +4,8 @@ import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
-from scipy.sparse import csr_matrix
 from PIL import Image
 import base64
-from sklearn.decomposition import TruncatedSVD
 
 # Load models and data
 with open('nmf.pkl', 'rb') as f:
@@ -18,16 +16,9 @@ with open('tfidf_vectorizer.pkl', 'rb') as f:
 
 anime_df_cleaned = pd.read_csv('anime_df_cleaned.csv')
 
-# Create the TF-IDF matrix and reduce its dimensions
-tfidf_matrix = tfidf_vectorizer.fit_transform(anime_df_cleaned['genre'])
-svd = TruncatedSVD(n_components=100)
-tfidf_matrix_reduced = svd.fit_transform(tfidf_matrix)
-
-# Convert to sparse matrix
-tfidf_matrix_sparse = csr_matrix(tfidf_matrix_reduced)
-
-# Compute cosine similarity using the sparse matrix
-cosine_sim = linear_kernel(tfidf_matrix_sparse, tfidf_matrix_sparse)
+# Create the TF-IDF matrix
+tfidf_matrix = tfidf_vectorizer.fit_transform(anime_df_cleaned['genre'])  
+cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
 
 # Function to get recommendations based on cosine similarity
 def get_recommendations(title, cosine_sim=cosine_sim):
