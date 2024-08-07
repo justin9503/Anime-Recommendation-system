@@ -124,7 +124,7 @@ To carry out all the objectives for this repository, the following necessary dep
 
 The Anime Recommender System uses a combination of collaborative and content-based filtering to provide personalized anime recommendations. Here’s a step-by-step guide to using the app:
 
-1. **Access the App**: Open the Anime Recommender System app using the following link: [Anime Recommender System App](https://justin9503-anime-recommender-system-base-app-bc2a21.streamlit.app/)
+1. **Access the App**: Open the Anime Recommender System app using the following link: [Anime Recommender System App](https://justin9503-anime-recommendation-system-base-app-vf8xbz.streamlit.app/)
 
 2. **Select the Model**: In the sidebar, choose the recommendation model you want to use:
    - **NMF Model**: This model uses Non-negative Matrix Factorization to predict ratings.
