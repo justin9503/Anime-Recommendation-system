@@ -132,6 +132,19 @@ def main():
             else:
                 st.write("No recommendations found for the given anime titles.")
 
+        if st.button("New User"):
+            st.write("Top 10 Highly Rated Anime for New Users:")
+            top_anime = anime_df_cleaned.sort_values(by='rating', ascending=False).head(10)
+            for i, row in top_anime.iterrows():
+                background_color = "#f0f0f0" if i % 2 == 0 else "#ffffff"
+                st.markdown(f"""
+                <div style="background-color: {background_color}; padding: 10px; border-radius: 5px;">
+                    <p><b>Name:</b> {row['name']}</p>
+                    <p><b>Rating:</b> {row['rating']}</p>
+                    <p><b>Type:</b> {row['type']}</p>
+                </div>
+                """, unsafe_allow_html=True)
+
     elif page == "EDA":
         st.title("Exploratory Data Analysis")
         st.image(eda1, caption='Distribution of Anime Types', use_column_width=True)
@@ -140,7 +153,6 @@ def main():
         st.image(eda4, caption='User and anime_rating distribution', use_column_width=True)
         st.image(eda5, caption='Average anime rating by anime type', use_column_width=True)
         st.image(eda6, caption='Box plots', use_column_width=True)
-
 
     elif page == "About":
         st.title("About")
